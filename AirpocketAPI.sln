@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirpocketAPI", "AirpocketAPI\AirpocketAPI.csproj", "{5FA5A62A-BFC7-4879-BA10-2EBE5CA75B0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FA5A62A-BFC7-4879-BA10-2EBE5CA75B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA5A62A-BFC7-4879-BA10-2EBE5CA75B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA5A62A-BFC7-4879-BA10-2EBE5CA75B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA5A62A-BFC7-4879-BA10-2EBE5CA75B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D9C8965-8447-4910-930C-B2EF0B3E665D}
+	EndGlobalSection
+EndGlobal
