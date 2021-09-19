@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c174d1540e4f4698a5a9f320322c7352" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="FLYModel.RptFlight" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FLYModel.DlyGrpFlight" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="FLYModel.ViewLegTime" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="FLYModel.ExpFlight" Width="1.5" PointX="9.375" PointY="0.75" />
+        <EntityTypeShape EntityType="FLYModel.IdeaSession" Width="1.5" PointX="9.375" PointY="10" />
+        <EntityTypeShape EntityType="FLYModel.IdeaAll" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="FLYModel.IdeaUnique" Width="1.5" PointX="2.75" PointY="9.75" />
+        <EntityTypeShape EntityType="FLYModel.ViewIdeaUniqueLast" Width="1.5" PointX="11.375" PointY="0.75" />
+        <EntityTypeShape EntityType="FLYModel.Person" Width="1.5" PointX="14.375" PointY="0.75" />
+        <EntityTypeShape EntityType="FLYModel.ThirdPartySyncHistory" Width="1.5" PointX="11.375" PointY="7.75" />
+        <EntityTypeShape EntityType="FLYModel.MVT" Width="1.5" PointX="0.75" PointY="14.75" />
+        <EntityTypeShape EntityType="FLYModel.ViewDelayCode" Width="1.5" PointX="2.75" PointY="14.75" />
+        <EntityTypeShape EntityType="FLYModel.ViewFlightDelayCode" Width="1.5" PointX="9.375" PointY="14.75" />
+        <EntityTypeShape EntityType="FLYModel.MVTAPI" Width="1.5" PointX="11.375" PointY="14.75" />
+        <EntityTypeShape EntityType="FLYModel.FDP" Width="1.5" PointX="16.375" PointY="1.375" />
+        <EntityTypeShape EntityType="FLYModel.FDPItem" Width="1.5" PointX="18.625" PointY="9.375" />
+        <EntityTypeShape EntityType="FLYModel.IdeaSessionItem" Width="1.5" PointX="18.625" PointY="5" />
+        <AssociationConnector Association="FLYModel.fk_fdp_fdp" />
+        <AssociationConnector Association="FLYModel.fk_fdpitem_fdp" />
+        <AssociationConnector Association="FLYModel.fk_sesitem_fdp" />
+        <AssociationConnector Association="FLYModel.fk_sesitem_ses" />
+        <EntityTypeShape EntityType="FLYModel.ViewEmployeeLight" Width="1.5" PointX="16.375" PointY="14.75" />
+        <EntityTypeShape EntityType="FLYModel.ViewFDPRest" Width="1.5" PointX="3.375" PointY="18.75" />
+        <EntityTypeShape EntityType="FLYModel.IdeaSessionUpdateError" Width="1.5" PointX="18.375" PointY="13.75" />
+        <EntityTypeShape EntityType="FLYModel.ViewIdeaSessionUpdateError" Width="1.5" PointX="18.375" PointY="18.75" />
+        <EntityTypeShape EntityType="FLYModel.ViewTrainingDuty" Width="1.5" PointX="0.75" PointY="20.75" />
+        <EntityTypeShape EntityType="FLYModel.IdeaSessionItemTemp" Width="1.5" PointX="22.625" PointY="14.375" />
+        <EntityTypeShape EntityType="FLYModel.IdeaSessionTemp" Width="1.5" PointX="20.375" PointY="14" />
+        <AssociationConnector Association="FLYModel.fk_sessitem_sesstemp" />
+        <EntityTypeShape EntityType="FLYModel.ViewFDPIdea" Width="1.5" PointX="11.375" PointY="10.75" />
+        <EntityTypeShape EntityType="FLYModel.ViewIdeaSessionItemX" Width="1.5" PointX="18.375" PointY="0.75" />
+        <EntityTypeShape EntityType="FLYModel.BookFile" Width="1.5" PointX="22.625" PointY="19.5" />
+        <EntityTypeShape EntityType="FLYModel.Document" Width="1.5" PointX="20.375" PointY="19" />
+        <EntityTypeShape EntityType="FLYModel.ViewBookFile" Width="1.5" PointX="9.375" PointY="20.75" />
+        <AssociationConnector Association="FLYModel.FK_BookFile_Document_Id" />
+        <AssociationConnector Association="FLYModel.FK_DOC_DOC" />
+        <EntityTypeShape EntityType="FLYModel.EFBDSPRelease" Width="1.5" PointX="11.375" PointY="20.75" />
+        <EntityTypeShape EntityType="FLYModel.OFPImportItem" Width="1.5" PointX="23.625" PointY="1.125" />
+        <EntityTypeShape EntityType="FLYModel.OFPImportProp" Width="1.5" PointX="23.625" PointY="3.625" />
+        <EntityTypeShape EntityType="FLYModel.OFPImport" Width="1.5" PointX="21.375" PointY="1.875" />
+        <AssociationConnector Association="FLYModel.fk_ofpl_ofp" />
+        <AssociationConnector Association="FLYModel.fk_ofpp_ofp" />
+        <EntityTypeShape EntityType="FLYModel.LoginInfo" Width="1.5" PointX="21.375" PointY="7.75" />
+        <EntityTypeShape EntityType="FLYModel.EFBASR" Width="1.5" PointX="5.375" PointY="22.75" />
+        <EntityTypeShape EntityType="FLYModel.EFBFlightIrregularity" Width="1.5" PointX="24.625" PointY="23" />
+        <EntityTypeShape EntityType="FLYModel.EFBReason" Width="1.5" PointX="24.625" PointY="25.625" />
+        <EntityTypeShape EntityType="FLYModel.EFBVoyageReport" Width="1.5" PointX="22.375" PointY="23.25" />
+        <AssociationConnector Association="FLYModel.fk_Irr_vr" />
+        <AssociationConnector Association="FLYModel.fk_reason_vr" />
+        <EntityTypeShape EntityType="FLYModel.AppLeg" Width="1.5" PointX="18.375" PointY="24.75" />
+        <EntityTypeShape EntityType="FLYModel.ViewFlightCrewNewX" Width="1.5" PointX="23.375" PointY="7.75" />
+        <EntityTypeShape EntityType="FLYModel.FlightInformation" Width="1.5" PointX="0.75" PointY="12" />
+        <AssociationConnector Association="FLYModel.fk_EFB_FI" />
+        <AssociationConnector Association="FLYModel.fk_fdpitem_flight" />
+        <AssociationConnector Association="FLYModel.fk_mvt_flight" />
+        <AssociationConnector Association="FLYModel.fk_mvtapi_flight" />
+        <EntityTypeShape EntityType="FLYModel.PersonHistory" Width="1.5" PointX="25.375" PointY="7.75" />
+        <EntityTypeShape EntityType="FLYModel.ViewTrainingSMSHistory" Width="1.5" PointX="7.375" PointY="25.75" />
+        <EntityTypeShape EntityType="FLYModel.AppCrewFlight" Width="1.5" PointX="13.375" PointY="26.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

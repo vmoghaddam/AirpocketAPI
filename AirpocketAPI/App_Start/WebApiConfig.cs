@@ -1,7 +1,12 @@
-﻿using System;
+﻿using AirpocketAPI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Http.Headers;
+using System.Net.Security;
 using System.Web.Http;
+using System.Web.Http.OData.Builder;
 
 namespace AirpocketAPI
 {
@@ -12,6 +17,7 @@ namespace AirpocketAPI
             // Web API configuration and services
 
             // Web API routes
+            config.EnableCors();
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
@@ -19,6 +25,16 @@ namespace AirpocketAPI
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
+
+            ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
+            builder.EntitySet<RptFlight>("RptFlights");
+            config.Routes.MapODataRoute("odata", "odata", builder.GetEdmModel());
+            ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback
+            (
+            delegate { return true; }
+            );
+
         }
     }
 }
