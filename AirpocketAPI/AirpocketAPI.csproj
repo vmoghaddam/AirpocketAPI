@@ -196,6 +196,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\DelayController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
     <Compile Include="Controllers\FlightController.cs" />
     <Compile Include="Controllers\FlightStatusController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -416,6 +417,14 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="upload\FlightPlan_2021.08.22.OIAW.OIII.013.txt" />
+    <Content Include="upload\FlightPlan_2021.08.22.OIFM.OIMM.6959.txt" />
+    <Content Include="upload\FlightPlan_2021.08.22.OIII.OIAW.012.txt" />
+    <Content Include="upload\FlightPlan_2021.08.22.OIII.OISS.6908.txt" />
+    <Content Include="upload\FlightPlan_2021.08.22.OIMM.OIFM.6958.txt" />
+    <Content Include="upload\FlightPlan_2021.08.22.OISS.OIMM.6919.txt" />
+    <Content Include="upload\FlightPlan_2021.09.01.OIAW.OIII.013.txt" />
+    <Content Include="upload\index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -430,9 +439,12 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="upload\New Microsoft Visio Drawing.vsdx" />
+    <Content Include="upload\FLIGHTS.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="upload\New folder\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
